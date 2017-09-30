@@ -26,14 +26,14 @@ class Controller : ControllerInterface {
         modelLayer?.getActiveTaxis()
     }
     func finishedFetchingActiveTaxis(_ list: [Taxi]?) {
-        
+        view?.updateWithList(list)
     }
     
     func InactiveTaxisTapped() {
-        
+        modelLayer?.getInactiveTaxis()
     }
     
     func finishedFetchingInactiveTaxis(_ list: [Taxi]?) {
-        
+        view?.updateWithList(list)
     }
 }

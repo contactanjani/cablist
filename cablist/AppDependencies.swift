@@ -22,7 +22,7 @@ class AppDependencies {
         
         //linking controller and model layer
         controller.modelLayer = modelLayer
-        model.controller = controller
+        modelLayer.controller = controller
         
         return view
     }

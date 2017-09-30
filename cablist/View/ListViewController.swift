@@ -29,6 +29,9 @@ public class ListViewController: UIViewController, ListViewInterface {
         // Do any additional setup after loading the view, typically from a nib.
         
         controller?.getAllTaxisForBounds(self.getBounds())
+        
+        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.yellow as Any], for: .selected)
+
     }
 
     func getBounds() ->(CLLocationCoordinate2D, CLLocationCoordinate2D) {
@@ -49,17 +52,18 @@ public class ListViewController: UIViewController, ListViewInterface {
         }
     }
 
-    @IBAction func segmentControllTapped(_ sender: Any) {
+
+    @IBAction func segmentedControlValueChanged(_ sender: Any) {
         
         let segmentControl = sender as! UISegmentedControl
         let index = segmentControl.selectedSegmentIndex
         
         switch index {
-        case 0 : controller?.activeTaxisTapped()
-        case 1 : controller?.InactiveTaxisTapped()
-        case 2 : controller?.getAllTaxisForBounds(self.getBounds())
+        case 0 : controller?.getAllTaxisForBounds(self.getBounds())
+        case 1 : controller?.activeTaxisTapped()
+        case 2 : controller?.InactiveTaxisTapped()
+        default : break
         }
-        
     }
 }
 

@@ -12,6 +12,7 @@ import CoreLocation
 class Service : ModelInterface {
     
     var controller : ControllerInterface?
+    var taxiList : TaxiList?
     
     init () {}
     
@@ -35,7 +36,21 @@ class Service : ModelInterface {
                     taxiList.append(taxi)
                 }
             }
-            self?.controller?.finishedFetchingTaxis(taxiList, forBounds: bounds)
+            
+            self?.taxiList = TaxiList()
+            self?.taxiList?.list = taxiList
+            
+            self?.controller?.finishedFetchingTaxis(self?.taxiList!.list, forBounds: bounds)
         }
+    }
+    
+    func getActiveTaxis() {
+        let activeTaxis = self.taxiList?.activeTaxis
+        controller?.finishedFetchingActiveTaxis(activeTaxis)
+    }
+    
+    func getInactiveTaxis() {
+        let inactiveTaxis = self.taxiList?.inactiveTaxis
+        controller?.finishedFetchingInactiveTaxis(inactiveTaxis)
     }
 }
