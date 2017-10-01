@@ -23,5 +23,7 @@ protocol ControllerInterface {
     func mapShownWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
     func listViewShownWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
     
-    func mapRegionChangedWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D)) 
+    func mapRegionChangedWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
+    
+    func refreshControlValueChangedWithBound(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
 }

@@ -77,6 +77,7 @@ public class MainViewController: UIViewController, ViewInterface {
             
             if self?.isMapShown == false {
                 self?.tblViewList.reloadData()
+                self?.tblViewList.refreshControl?.endRefreshing()
             }else {
                 self?.refreshMapWithList(self?.taxiList)
             }

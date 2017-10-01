@@ -65,4 +65,9 @@ class Controller : ControllerInterface {
         view?.showStatusBarLoader()
         modelLayer?.getAllTaxisForBounds(bounds)
     }
+    
+    func refreshControlValueChangedWithBound(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D)) {
+        view?.showStatusBarLoader()
+        modelLayer?.getAllTaxisForBounds(bounds)
+    }
 }

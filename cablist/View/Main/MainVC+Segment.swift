@@ -38,10 +38,17 @@ extension MainViewController {
         let activeString = "Active(\(active))"
         let inactiveString = "Inactive(\(inactive))"
         
+        let currentAllString = self.segmentControlTaxiState.titleForSegment(at: 0)
+        let currentActiveString = self.segmentControlTaxiState.titleForSegment(at: 1)
+        let currentInActiveString = self.segmentControlTaxiState.titleForSegment(at: 2)
+        
+        guard  currentAllString != allString || currentActiveString != activeString || currentInActiveString != inactiveString else {
+            return
+        }
         
         DispatchQueue.main.async {[weak self] in
             UIView.transition(with: (self?.segmentControlTaxiState)!,
-                              duration: 0.2,
+                              duration: 0.1,
                               options: .transitionCrossDissolve,
                               animations: { [weak self] in
                                 self?.segmentControlTaxiState.setTitle(allString, forSegmentAt:0)

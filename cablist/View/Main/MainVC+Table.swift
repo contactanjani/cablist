@@ -23,6 +23,8 @@ extension MainViewController : UITableViewDataSource, UITableViewDelegate {
         frame.size.height = self.view.frame.size.height - frame.origin.y
         tblViewList.frame = frame
         self.view.addSubview(tblViewList)
+    
+        self.addRefreshControl()
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,5 +39,17 @@ extension MainViewController : UITableViewDataSource, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard taxiList != nil else {return 0}
         return taxiList!.count
+    }
+    
+    func addRefreshControl() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self,
+                                 action: #selector(MainViewController.refreshControlActionEnded),
+                                 for: .valueChanged)
+        tblViewList.refreshControl = refreshControl
+    }
+    
+    @objc func refreshControlActionEnded() {
+        controller?.refreshControlValueChangedWithBound(self.getBounds())
     }
 }
