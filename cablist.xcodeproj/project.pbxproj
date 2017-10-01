@@ -75,6 +75,8 @@
 		4556AFA61F81114000C07FB7 /* MainVC+Loaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AFA51F81114000C07FB7 /* MainVC+Loaders.swift */; };
 		4556AFA71F81114000C07FB7 /* MainVC+Loaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AFA51F81114000C07FB7 /* MainVC+Loaders.swift */; };
 		4556AFA81F81114000C07FB7 /* MainVC+Loaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AFA51F81114000C07FB7 /* MainVC+Loaders.swift */; };
+		4556AFAB1F813DCA00C07FB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF2D1F7E85B300E5B2FA /* AppDelegate.swift */; };
+		4556AFAC1F813DCA00C07FB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF2D1F7E85B300E5B2FA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -526,6 +528,7 @@
 				4538BF6B1F7F7B1A00E5B2FA /* Service.swift in Sources */,
 				4538BF431F7E85B300E5B2FA /* cablistTests.swift in Sources */,
 				4538BF631F7F7AD100E5B2FA /* Controller.swift in Sources */,
+				4556AFAB1F813DCA00C07FB7 /* AppDelegate.swift in Sources */,
 				4538BF891F7FA78100E5B2FA /* MainVC+Table.swift in Sources */,
 				4538BFDB1F810B8500E5B2FA /* UIViewController+Loader.swift in Sources */,
 			);
@@ -553,6 +556,7 @@
 				4538BF6C1F7F7B1A00E5B2FA /* Service.swift in Sources */,
 				4538BF4E1F7E85B300E5B2FA /* cablistUITests.swift in Sources */,
 				4538BF641F7F7AD100E5B2FA /* Controller.swift in Sources */,
+				4556AFAC1F813DCA00C07FB7 /* AppDelegate.swift in Sources */,
 				4538BF8A1F7FA78100E5B2FA /* MainVC+Table.swift in Sources */,
 				4538BFDC1F810B8500E5B2FA /* UIViewController+Loader.swift in Sources */,
 			);

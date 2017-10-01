@@ -23,7 +23,6 @@ class NetworkManager {
         session.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
             if let err = error as? URLError, err.code  == URLError.Code.notConnectedToInternet {
                 
-                //LMSUtility.showNoInternetConnectivityMessage()
             }
             do {
                 let responseDictionary = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as? [String:Any]

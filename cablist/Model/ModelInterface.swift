@@ -13,5 +13,4 @@ protocol ModelInterface {
     func getAllTaxisForBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
     func getActiveTaxis()
     func getInactiveTaxis()
-    
 }

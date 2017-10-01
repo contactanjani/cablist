@@ -13,7 +13,7 @@ import CoreLocation
 class Service : ModelInterface {
     static let kPOIBaseUrl = "https://poi-api.mytaxi.com/PoiService/poi/v1?"
 
-    var controller : ControllerInterface?
+    var controller : ControllerAndModelLayerInterface?
     var taxiList : TaxiList?
     
     init () {}

@@ -17,6 +17,38 @@
             endingLineNumber = "51"
             landmarkName = "refreshMapWithList(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablist.MainViewController.refreshMapWithList(Swift.Optional&lt;Swift.Array&lt;cablist.Taxi&gt;&gt;) -&gt; ()"
+                  moduleName = "cablist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC+Map.swift"
+                  timestampString = "528566515.372311"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "439">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablistTests.MainViewController.refreshMapWithList(Swift.Optional&lt;Swift.Array&lt;cablistTests.Taxi&gt;&gt;) -&gt; ()"
+                  moduleName = "cablistTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC+Map.swift"
+                  timestampString = "528566516.650381"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "439">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -33,6 +65,38 @@
             endingLineNumber = "76"
             landmarkName = "mapView(_:viewFor:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablist.MainViewController.mapView(__ObjC.MKMapView, viewFor: __ObjC.MKAnnotation) -&gt; Swift.Optional&lt;__ObjC.MKAnnotationView&gt;"
+                  moduleName = "cablist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC+Map.swift"
+                  timestampString = "528566515.380445"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "697">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablistTests.MainViewController.mapView(__ObjC.MKMapView, viewFor: __ObjC.MKAnnotation) -&gt; Swift.Optional&lt;__ObjC.MKAnnotationView&gt;"
+                  moduleName = "cablistTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC+Map.swift"
+                  timestampString = "528566516.656882"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "697">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -49,6 +113,38 @@
             endingLineNumber = "73"
             landmarkName = "mapView(_:viewFor:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablist.MainViewController.mapView(__ObjC.MKMapView, viewFor: __ObjC.MKAnnotation) -&gt; Swift.Optional&lt;__ObjC.MKAnnotationView&gt;"
+                  moduleName = "cablist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC+Map.swift"
+                  timestampString = "528566515.38618"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "370">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablistTests.MainViewController.mapView(__ObjC.MKMapView, viewFor: __ObjC.MKAnnotation) -&gt; Swift.Optional&lt;__ObjC.MKAnnotationView&gt;"
+                  moduleName = "cablistTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC+Map.swift"
+                  timestampString = "528566516.660836"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "370">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,13 +154,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cablist/View/Main/MainVC.swift"
-            timestampString = "528559073.886065"
+            timestampString = "528566532.963032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "updateWithList(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in cablist.MainViewController.updateWithList(Swift.Optional&lt;Swift.Array&lt;cablist.Taxi&gt;&gt;) -&gt; ()"
+                  moduleName = "cablist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC.swift"
+                  timestampString = "528566515.393026"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "1204">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in cablistTests.MainViewController.updateWithList(Swift.Optional&lt;Swift.Array&lt;cablistTests.Taxi&gt;&gt;) -&gt; ()"
+                  moduleName = "cablistTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/View/Main/MainVC.swift"
+                  timestampString = "528566516.665087"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "1204">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,13 +202,93 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cablist/Storyboards/Extensions/UIViewController+Loader.swift"
-            timestampString = "528559073.886393"
+            timestampString = "528563697.791948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "showActivityIndicatorView(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in cablist):__ObjC.UIView.showActivityIndicatorView(Swift.Bool) -&gt; ()"
+                  moduleName = "cablist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/Storyboards/Extensions/UIViewController+Loader.swift"
+                  timestampString = "528566515.398876"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in cablistTests):__ObjC.UIView.showActivityIndicatorView(Swift.Bool) -&gt; ()"
+                  moduleName = "cablistTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/Storyboards/Extensions/UIViewController+Loader.swift"
+                  timestampString = "528566516.669277"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cablist/Model/Service/Network/NetworkManager.swift"
+            timestampString = "528566532.963367"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fireRequest(_:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablist.NetworkManager.fireRequest(Foundation.URLRequest, completion: (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "cablist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/Model/Service/Network/NetworkManager.swift"
+                  timestampString = "528566515.405627"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cablistTests.NetworkManager.fireRequest(Foundation.URLRequest, completion: (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "cablistTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anjani/Documents/cablist/cablist/Model/Service/Network/NetworkManager.swift"
+                  timestampString = "528566516.675168"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

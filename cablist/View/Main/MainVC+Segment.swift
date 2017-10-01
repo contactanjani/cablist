@@ -17,10 +17,6 @@ enum PageMode {
 
 extension MainViewController {
     
-    func configureSegmentView() {
-        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.yellow as Any], for: .selected)
-    }
-    
     @IBAction func segmentedControlValueChanged(_ sender: Any) {
         let segmentControl = sender as! UISegmentedControl
         let index = segmentControl.selectedSegmentIndex

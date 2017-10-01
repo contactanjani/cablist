@@ -21,7 +21,7 @@ public class MainViewController: UIViewController, ViewInterface {
     var mapView: MKMapView!
     
     var taxiList : [Taxi]?
-    var controller : ControllerInterface?
+    var controller : ControllerAndViewInterface?
     
     var isMapShown = false
     
@@ -34,7 +34,6 @@ public class MainViewController: UIViewController, ViewInterface {
     //MARK:- LIFECYCLE METHODS
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.configureSegmentView()
     }
     
     public override func viewDidAppear(_ animated: Bool) {

@@ -12,6 +12,7 @@ class TaxiList {
     
     var list : [Taxi]?
     
+    init() {}
     init(dictionary : [String:Any]) {
         
         var taxiList = [Taxi]()
