@@ -12,28 +12,57 @@ import CoreLocation
 class Controller : ControllerInterface {
     
     var modelLayer : ModelInterface?
-    var view : ListViewInterface?
+    var view : ViewInterface?
     
     func getAllTaxisForBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D)) {
-        modelLayer?.getAllTaxisForBounds(bounds: bounds)
+        view?.showLoader()
+        modelLayer?.getAllTaxisForBounds(bounds)
     }
     
-    func finishedFetchingTaxis(_ list: [Taxi]?, forBounds: (CLLocationCoordinate2D, CLLocationCoordinate2D)) {
-        view?.updateWithList(list)
+    func finishedFetchingAllTaxis(_ model : TaxiList?) {
+        
+        var resultList = model?.list
+        if  view?.mode() == PageMode.Active {
+            resultList = model?.activeTaxis
+        }else if view?.mode() == PageMode.Inactive {
+            resultList = model?.inactiveTaxis
+        }
+        view?.updateWithList(resultList)
+        view?.updateTaxiCountsInTab(active: (model?.activeTaxis?.count)!, inactive: (model?.inactiveTaxis?.count)!, all: (model?.list?.count)!)
+        view?.hideLoader()
     }
     
     func activeTaxisTapped() {
         modelLayer?.getActiveTaxis()
     }
-    func finishedFetchingActiveTaxis(_ list: [Taxi]?) {
-        view?.updateWithList(list)
+    func finishedFetchingActiveTaxis(_ model : TaxiList?) {
+        view?.updateWithList(model?.activeTaxis)
     }
     
     func InactiveTaxisTapped() {
         modelLayer?.getInactiveTaxis()
     }
+    func finishedFetchingInactiveTaxis(_ model : TaxiList?) {
+        view?.updateWithList(model?.inactiveTaxis)
+
+    }
     
-    func finishedFetchingInactiveTaxis(_ list: [Taxi]?) {
-        view?.updateWithList(list)
+    func viewToggleTapped(){
+        view?.toggleView()
+    }
+    
+    func mapShownWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))  {
+        view?.showLoader()
+        modelLayer?.getAllTaxisForBounds(bounds)
+    }
+    
+    func listViewShownWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))  {
+        view?.showLoader()
+        modelLayer?.getAllTaxisForBounds(bounds)
+    }
+    
+    func mapRegionChangedWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))  {
+        view?.showStatusBarLoader()
+        modelLayer?.getAllTaxisForBounds(bounds)
     }
 }

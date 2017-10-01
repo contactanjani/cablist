@@ -13,7 +13,7 @@ class AppDependencies {
     class func initializeDependencies(window : UIWindow) -> UIViewController {
         
         let controller = Controller()
-        let view = ListViewController.loadViewController()
+        let view = MainViewController.loadViewController()
         let modelLayer = Service()
         
         //linking view and controller

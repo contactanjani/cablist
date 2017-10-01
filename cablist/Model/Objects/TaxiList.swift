@@ -12,6 +12,18 @@ class TaxiList {
     
     var list : [Taxi]?
     
+    init(dictionary : [String:Any]) {
+        
+        var taxiList = [Taxi]()
+        if let poiList = dictionary["poiList"] as? [[String:Any]] {
+            for poi in poiList {
+                let taxi = Taxi(dictionary: poi)
+                taxiList.append(taxi)
+            }
+        }
+        self.list = taxiList
+    }
+    
     //computed properties are computed only once. fetched from cache later. they don't throw.
     var activeTaxis : [Taxi]? {
         return list?.filter {$0.state == State.Active}

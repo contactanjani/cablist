@@ -11,11 +11,17 @@ import CoreLocation
 
 protocol ControllerInterface {
     func getAllTaxisForBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
-    func finishedFetchingTaxis(_ list : [Taxi]?, forBounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
+    func finishedFetchingAllTaxis(_ model : TaxiList?)
     
     func activeTaxisTapped()
-    func finishedFetchingActiveTaxis(_ list: [Taxi]?)
+    func finishedFetchingActiveTaxis(_ model : TaxiList?)
     
     func InactiveTaxisTapped()
-    func finishedFetchingInactiveTaxis(_ list: [Taxi]?)
+    func finishedFetchingInactiveTaxis(_ model: TaxiList?)
+    
+    func viewToggleTapped()
+    func mapShownWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
+    func listViewShownWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
+    
+    func mapRegionChangedWithBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D)) 
 }

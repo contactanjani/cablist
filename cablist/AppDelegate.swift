@@ -12,15 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        self.configureFirstView()
+        return true
+    }
+    
+    func configureFirstView() {
         self.window!.makeKeyAndVisible()
-        
         let nc = self.window!.rootViewController as! UINavigationController
         nc.viewControllers = [AppDependencies.initializeDependencies(window: self.window!)]
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -10,7 +10,8 @@ import Foundation
 import CoreLocation
 
 protocol ModelInterface {
-    func getAllTaxisForBounds(bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
+    func getAllTaxisForBounds(_ bounds : (CLLocationCoordinate2D, CLLocationCoordinate2D))
     func getActiveTaxis()
     func getInactiveTaxis()
+    
 }
