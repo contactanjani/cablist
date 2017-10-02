@@ -1,5 +1,5 @@
 # cablist
--XCode 9, Swift-3.2, Objective-C used.
+-XCode 9, Swift-3.2, Objective-C used.  
 -interfaces are used to improve testability and abstraction. ViewInterface, ControllerInterface, ModelInterface. MVC implemented.  
 -filter taxis by active, inactive status - in both map and list views. in map, the active cars use red color and inactive cars use green color. in list view, there is inactive, active label for each taxi. green is used to denote active taxi in both list and map views for consistency.  
 -implemented count of taxis of each state, in top tab in list view  
