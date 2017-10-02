@@ -8,6 +8,7 @@
 
 import Foundation
 
+//extension for loaders shown during asynchronous operations
 extension MainViewController {
     func showLoader() {
         self.showViewLoader()

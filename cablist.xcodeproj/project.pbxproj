@@ -47,7 +47,7 @@
 		4538BF901F7FB39000E5B2FA /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF8D1F7FB39000E5B2FA /* AppDependencies.swift */; };
 		4538BF921F7FB57500E5B2FA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF2F1F7E85B300E5B2FA /* MainVC.swift */; };
 		4538BF931F7FB57500E5B2FA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF2F1F7E85B300E5B2FA /* MainVC.swift */; };
-		4538BF961F7FC9C600E5B2FA /* MainVC+Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF951F7FC9C600E5B2FA /* MainVC+Segment.swift */; };
+		4538BF961F7FC9C600E5B2FA /* MainVC+Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF951F7FC9C600E5B2FA /* MainVC+Tab.swift */; };
 		4538BFC11F80B88E00E5B2FA /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFB91F80B62E00E5B2FA /* ListVC.swift */; };
 		4538BFC21F80B88F00E5B2FA /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFB91F80B62E00E5B2FA /* ListVC.swift */; };
 		4538BFC31F80B89000E5B2FA /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFB91F80B62E00E5B2FA /* ListVC.swift */; };
@@ -57,8 +57,8 @@
 		4538BFC71F80B89900E5B2FA /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFC01F80B62E00E5B2FA /* MapVC.m */; };
 		4538BFC81F80B89A00E5B2FA /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFC01F80B62E00E5B2FA /* MapVC.m */; };
 		4538BFC91F80B89B00E5B2FA /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFC01F80B62E00E5B2FA /* MapVC.m */; };
-		4538BFCA1F80B8E800E5B2FA /* MainVC+Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF951F7FC9C600E5B2FA /* MainVC+Segment.swift */; };
-		4538BFCB1F80B8E900E5B2FA /* MainVC+Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF951F7FC9C600E5B2FA /* MainVC+Segment.swift */; };
+		4538BFCA1F80B8E800E5B2FA /* MainVC+Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF951F7FC9C600E5B2FA /* MainVC+Tab.swift */; };
+		4538BFCB1F80B8E900E5B2FA /* MainVC+Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BF951F7FC9C600E5B2FA /* MainVC+Tab.swift */; };
 		4538BFCD1F80BBAC00E5B2FA /* MainVC+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFCC1F80BBAC00E5B2FA /* MainVC+Map.swift */; };
 		4538BFCE1F80BEA800E5B2FA /* MainVC+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFCC1F80BBAC00E5B2FA /* MainVC+Map.swift */; };
 		4538BFCF1F80BEA900E5B2FA /* MainVC+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538BFCC1F80BBAC00E5B2FA /* MainVC+Map.swift */; };
@@ -118,7 +118,7 @@
 		4538BF821F7FA57A00E5B2FA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4538BF871F7FA78100E5B2FA /* MainVC+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+Table.swift"; sourceTree = "<group>"; };
 		4538BF8D1F7FB39000E5B2FA /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
-		4538BF951F7FC9C600E5B2FA /* MainVC+Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+Segment.swift"; sourceTree = "<group>"; };
+		4538BF951F7FC9C600E5B2FA /* MainVC+Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+Tab.swift"; sourceTree = "<group>"; };
 		4538BFB91F80B62E00E5B2FA /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		4538BFBA1F80B62E00E5B2FA /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		4538BFBC1F80B62E00E5B2FA /* cablist-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cablist-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -286,7 +286,7 @@
 				4538BF2F1F7E85B300E5B2FA /* MainVC.swift */,
 				4538BF871F7FA78100E5B2FA /* MainVC+Table.swift */,
 				4538BFCC1F80BBAC00E5B2FA /* MainVC+Map.swift */,
-				4538BF951F7FC9C600E5B2FA /* MainVC+Segment.swift */,
+				4538BF951F7FC9C600E5B2FA /* MainVC+Tab.swift */,
 				4538BFD31F80DF5700E5B2FA /* MainVC+Toggle.swift */,
 				4556AFA51F81114000C07FB7 /* MainVC+Loaders.swift */,
 				4538BFB81F80B62E00E5B2FA /* Table */,
@@ -488,7 +488,7 @@
 				4538BF8E1F7FB39000E5B2FA /* AppDependencies.swift in Sources */,
 				4538BF661F7F7AF700E5B2FA /* NetworkManager.swift in Sources */,
 				4538BF621F7F7AD100E5B2FA /* Controller.swift in Sources */,
-				4538BF961F7FC9C600E5B2FA /* MainVC+Segment.swift in Sources */,
+				4538BF961F7FC9C600E5B2FA /* MainVC+Tab.swift in Sources */,
 				4538BF761F7F9FC600E5B2FA /* ViewInterface.swift in Sources */,
 				4538BF7F1F7FA29E00E5B2FA /* ControllerInterface.swift in Sources */,
 				4538BFC41F80B89200E5B2FA /* ListViewCell.swift in Sources */,
@@ -523,7 +523,7 @@
 				4556AFA71F81114000C07FB7 /* MainVC+Loaders.swift in Sources */,
 				4538BFC81F80B89A00E5B2FA /* MapVC.m in Sources */,
 				4538BF671F7F7AF700E5B2FA /* NetworkManager.swift in Sources */,
-				4538BFCA1F80B8E800E5B2FA /* MainVC+Segment.swift in Sources */,
+				4538BFCA1F80B8E800E5B2FA /* MainVC+Tab.swift in Sources */,
 				4538BFD51F80DF5700E5B2FA /* MainVC+Toggle.swift in Sources */,
 				4538BF6B1F7F7B1A00E5B2FA /* Service.swift in Sources */,
 				4538BF431F7E85B300E5B2FA /* cablistTests.swift in Sources */,
@@ -551,7 +551,7 @@
 				4556AFA81F81114000C07FB7 /* MainVC+Loaders.swift in Sources */,
 				4538BFC91F80B89B00E5B2FA /* MapVC.m in Sources */,
 				4538BF681F7F7AF700E5B2FA /* NetworkManager.swift in Sources */,
-				4538BFCB1F80B8E900E5B2FA /* MainVC+Segment.swift in Sources */,
+				4538BFCB1F80B8E900E5B2FA /* MainVC+Tab.swift in Sources */,
 				4538BFD61F80DF5700E5B2FA /* MainVC+Toggle.swift in Sources */,
 				4538BF6C1F7F7B1A00E5B2FA /* Service.swift in Sources */,
 				4538BF4E1F7E85B300E5B2FA /* cablistUITests.swift in Sources */,

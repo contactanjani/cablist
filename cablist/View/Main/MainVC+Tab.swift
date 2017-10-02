@@ -15,6 +15,7 @@ enum PageMode {
     case Inactive
 }
 
+//extension for segment control (Active, Inactive, All) Tab
 extension MainViewController {
     
     @IBAction func segmentedControlValueChanged(_ sender: Any) {
@@ -43,14 +44,9 @@ extension MainViewController {
         }
         
         DispatchQueue.main.async {[weak self] in
-            UIView.transition(with: (self?.segmentControlTaxiState)!,
-                              duration: 0.1,
-                              options: .transitionCrossDissolve,
-                              animations: { [weak self] in
                                 self?.segmentControlTaxiState.setTitle(allString, forSegmentAt:0)
                                 self?.segmentControlTaxiState.setTitle(activeString, forSegmentAt:1)
                                 self?.segmentControlTaxiState.setTitle(inactiveString, forSegmentAt:2)
-                }, completion: nil)
         }
     }
     

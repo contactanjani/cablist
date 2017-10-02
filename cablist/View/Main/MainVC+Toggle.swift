@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//extension for map/list button at the top right (Toggle)
 extension MainViewController {
     static let kToggleTitleMap = "Map"
     static let kToggleTitleList = "List"

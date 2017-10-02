@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MapKit
 
-
+//extension for map view
 extension MainViewController : MKMapViewDelegate {
     static let kHamburgLatlong = CLLocationCoordinate2DMake(53.5586526, 9.6476378)
     

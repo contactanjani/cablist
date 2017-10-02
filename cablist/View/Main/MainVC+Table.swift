@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//extension for table view
 extension MainViewController : UITableViewDataSource, UITableViewDelegate {
     static let kCellIdentifier = "taxi"
     
