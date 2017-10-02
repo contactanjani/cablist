@@ -11,6 +11,7 @@ import CoreLocation
 
 class Controller : ControllerAndViewInterface, ControllerAndModelLayerInterface {
     
+    static let kUnknownErrorMessage = "Something went wrong"
     var modelLayer : ModelInterface?
     var view : ViewInterface?
     
@@ -79,7 +80,7 @@ class Controller : ControllerAndViewInterface, ControllerAndModelLayerInterface 
             if let msg = dictionary["error"] as? String {
                 self.view?.showAlertWithMessage(msg)
             }else {
-                self.view?.showAlertWithMessage("Something went wrong")
+                self.view?.showAlertWithMessage(Controller.kUnknownErrorMessage)
             }
     }
     
