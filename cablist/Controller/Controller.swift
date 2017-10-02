@@ -74,4 +74,13 @@ class Controller : ControllerAndViewInterface, ControllerAndModelLayerInterface 
     func finishedFetchingInactiveTaxis(_ model : TaxiList?) {
         view?.updateWithList(model?.inactiveTaxis)
     }
+    
+    func didFinishWithError(dictionary : [String:Any]) {
+            if let msg = dictionary["error"] as? String {
+                self.view?.showAlertWithMessage(msg)
+            }else {
+                self.view?.showAlertWithMessage("Something went wrong")
+            }
+    }
+    
 }

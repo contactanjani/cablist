@@ -11,7 +11,7 @@ import CoreLocation
 
 
 class Service : ModelInterface {
-    static let kPOIBaseUrl = "https://poi-api.mytaxi.com/PoiService/poi/v1?"
+    static let kPOIBaseUrl = "https://poi1-api.mytaxi.com/PoiService/poi/v1?"
 
     var controller : ControllerAndModelLayerInterface?
     var taxiList : TaxiList?
@@ -26,10 +26,19 @@ class Service : ModelInterface {
         request.httpMethod = "GET"
         
         NetworkManager.shared.fireRequest(request) {[weak self] (dictionary) in
+            
             guard dictionary != nil else {
-                self?.controller?.finishedFetchingAllTaxis(nil)
+                let errorDictionary = ["error":"Response was nil"]
+                self?.controller?.didFinishWithError(dictionary:errorDictionary)
                 return
             }
+            
+            if dictionary!["error"] != nil {
+                self?.controller?.didFinishWithError(dictionary: dictionary!)
+                return
+            }
+            
+            //success case
             self?.taxiList = TaxiList(dictionary : dictionary!)
             self?.controller?.finishedFetchingAllTaxis(self?.taxiList)
         }

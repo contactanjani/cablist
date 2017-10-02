@@ -52,6 +52,9 @@ extension MainViewController : MKMapViewDelegate {
     
     func refreshMapWithList(_ list : [Taxi]?) {
         mapView.removeAnnotations(mapView.annotations)
+        
+        guard list != nil else { return }
+        
         let annotationList = self.annotationList(list: list)
         mapView.addAnnotations(annotationList)
     }

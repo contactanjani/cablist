@@ -20,4 +20,6 @@ protocol  ViewInterface {
     
     func showStatusBarLoader()
     func hideStatusBarLoader()
+    
+    func showAlertWithMessage(_ msg : String)
 }

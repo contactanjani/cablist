@@ -28,4 +28,5 @@ protocol ControllerAndModelLayerInterface {
     func finishedFetchingAllTaxis(_ model : TaxiList?)
     func finishedFetchingActiveTaxis(_ model : TaxiList?)
     func finishedFetchingInactiveTaxis(_ model: TaxiList?)
+    func didFinishWithError(dictionary : [String:Any])
 }
