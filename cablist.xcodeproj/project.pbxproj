@@ -221,8 +221,9 @@
 			isa = PBXGroup;
 			children = (
 				4538BF791F7FA13E00E5B2FA /* ModelInterface.swift */,
-				4538BF7D1F7FA1B500E5B2FA /* Objects */,
+				4538BF691F7F7B1A00E5B2FA /* Service.swift */,
 				4538BF5C1F7F7A8300E5B2FA /* Service */,
+				4538BF7D1F7FA1B500E5B2FA /* Objects */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,7 +231,6 @@
 		4538BF5C1F7F7A8300E5B2FA /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4538BF691F7F7B1A00E5B2FA /* Service.swift */,
 				4538BF5D1F7F7A9500E5B2FA /* Network */,
 			);
 			path = Service;
@@ -257,7 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				4538BF751F7F9FC600E5B2FA /* ViewInterface.swift */,
-				4538BFA11F800CB100E5B2FA /* Main */,
+				4538BF2F1F7E85B300E5B2FA /* MainVC.swift */,
+				4538BFA11F800CB100E5B2FA /* ViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,10 +281,9 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		4538BFA11F800CB100E5B2FA /* Main */ = {
+		4538BFA11F800CB100E5B2FA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4538BF2F1F7E85B300E5B2FA /* MainVC.swift */,
 				4538BF871F7FA78100E5B2FA /* MainVC+Table.swift */,
 				4538BFCC1F80BBAC00E5B2FA /* MainVC+Map.swift */,
 				4538BF951F7FC9C600E5B2FA /* MainVC+Tab.swift */,
@@ -292,7 +292,7 @@
 				4538BFB81F80B62E00E5B2FA /* Table */,
 				4538BFBB1F80B62E00E5B2FA /* Map */,
 			);
-			path = Main;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		4538BFB81F80B62E00E5B2FA /* Table */ = {

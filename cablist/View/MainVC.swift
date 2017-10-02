@@ -12,22 +12,26 @@ import MapKit
 
 
 public class MainViewController: UIViewController, ViewInterface {
+    
+    //MARK:- Constants
     static let kDefaultBounds = (CLLocationCoordinate2DMake(53.694865, 9.757589),CLLocationCoordinate2DMake(53.394655, 10.099891))
+    static let kStoryBoardIdentifier = "Main"
+    static let kMainViewControllerIdentifier = "MainViewController"
 
+    //MARK:- IBOutlets
     @IBOutlet weak var segmentControlTaxiState: UISegmentedControl!
     @IBOutlet weak var btnToggleView: UIBarButtonItem!
     
+    //MARK:- local variables
     var tblViewList: UITableView!
     var mapView: MKMapView!
-    
     var taxiList : [Taxi]?
     var controller : ControllerAndViewInterface?
-    
     var isMapShown = false
     
     class func loadViewController() -> MainViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        let storyboard = UIStoryboard(name: kStoryBoardIdentifier, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: kMainViewControllerIdentifier) as! MainViewController
         return vc
     }
     

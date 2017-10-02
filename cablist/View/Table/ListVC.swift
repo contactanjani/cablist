@@ -11,11 +11,14 @@ import UIKit
 
 class ListViewController : UITableViewController {
     
+    static let kStoryboardIdentifier = "Main"
+    static let kListViewControllerIdentifier = "ListViewController"
+    
     @IBOutlet weak var tblViewList: UITableView!
     
     class func loadViewController() -> ListViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
+        let storyboard = UIStoryboard(name: kStoryboardIdentifier, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: kListViewControllerIdentifier) as! ListViewController
         return vc
     }
     

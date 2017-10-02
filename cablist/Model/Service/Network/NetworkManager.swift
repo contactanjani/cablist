@@ -10,6 +10,9 @@ import Foundation
 
 class NetworkManager {
     
+    static let kNoNetworkErrorMessage = "No network"
+    static let kNoDataReceivedErrorMessage = "NO data received"
+    
     private init() {}
     static let shared = NetworkManager()  //swift style of singleton
     
@@ -22,13 +25,13 @@ class NetworkManager {
         
         session.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
             if let err = error as? URLError, err.code  == URLError.Code.notConnectedToInternet {
-                let responseDictionary = ["error":"No network"]
+                let responseDictionary = ["error":NetworkManager.kNoNetworkErrorMessage]
                 completion(responseDictionary)
                 return
             }
             
             guard data != nil else {
-                let responseDictionary = ["error":"No data received"]
+                let responseDictionary = ["error":NetworkManager.kNoDataReceivedErrorMessage]
                 completion(responseDictionary)
                 return
             }

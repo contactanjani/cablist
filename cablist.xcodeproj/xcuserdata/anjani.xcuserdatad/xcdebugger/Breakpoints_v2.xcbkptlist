@@ -250,13 +250,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cablist/Model/Service/Network/NetworkManager.swift"
-            timestampString = "528604910.402821"
+            timestampString = "528606073.148326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "fireRequest(_:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "NetworkManager"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"

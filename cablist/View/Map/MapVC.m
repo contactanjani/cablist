@@ -41,8 +41,6 @@
 {
     MapViewController *mapVC = [MapViewController loadViewController];
     UIView *view = [mapVC view];
-    CGRect frame = [[mapVC mapView] frame];
-    
     return [mapVC mapView];
 }
 

@@ -12,7 +12,11 @@ import MapKit
 
 //extension for map view
 extension MainViewController : MKMapViewDelegate {
+    
     static let kHamburgLatlong = CLLocationCoordinate2DMake(53.5586526, 9.6476378)
+    static let kAnnotationIdentifier = "CustomAnnotation"
+    static let kActiveTaxiImageName = "green_marker"
+    static let kInactiveTaxiImageName = "red_marker"
     
     func configureMapView() {
         
@@ -67,16 +71,15 @@ extension MainViewController : MKMapViewDelegate {
     public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation { return nil }
         
-        let identifier = "CustomAnnotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MainViewController.kAnnotationIdentifier)
         
         if annotationView == nil {
-            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: MainViewController.kAnnotationIdentifier)
             annotationView!.canShowCallout = true
         } else {
             annotationView!.annotation = annotation            
         }
-        annotationView!.image = (annotation.title! == State.Active.rawValue) ? UIImage(named: "green_marker") : UIImage(named: "red_marker")
+        annotationView!.image = (annotation.title! == State.Active.rawValue) ? UIImage(named: MainViewController.kActiveTaxiImageName) : UIImage(named: MainViewController.kInactiveTaxiImageName)
         
         return annotationView
     }
