@@ -12,6 +12,8 @@ import XCTest
 class cablistTests: XCTestCase {
     
     class MockView : ViewInterface {
+        func showAlertWithMessage(_ msg: String) {}
+        
         func updateWithList(_ list : [Taxi]?) {self.taxiList = list}
         func updateTaxiCountsInTab(active : Int, inactive : Int, all : Int) {}
         
@@ -29,6 +31,8 @@ class cablistTests: XCTestCase {
     }
     
     class MockController : ControllerAndViewInterface, ControllerAndModelLayerInterface {
+        func didFinishWithError(dictionary: [String : Any]) {}
+        
         
         let taxi = Taxi(dictionary: ["id":12345])
         

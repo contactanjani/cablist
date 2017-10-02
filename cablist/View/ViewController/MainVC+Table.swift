@@ -19,7 +19,7 @@ extension MainViewController : UITableViewDataSource, UITableViewDelegate {
         tblViewList.dataSource = self
         tblViewList.delegate = self
         var frame = tblViewList.frame
-        frame.origin.y = segmentControlTaxiState.frame.origin.y + segmentControlTaxiState.frame.size.height + 20
+        frame.origin.y = segmentControlTaxiState.frame.origin.y + segmentControlTaxiState.frame.size.height + 19
         frame.origin.x = 0
         frame.size.width = self.view.frame.size.width
         frame.size.height = self.view.frame.size.height - frame.origin.y
